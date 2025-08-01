@@ -1,0 +1,34 @@
+@use '../helpers' as *;
+
+.menu {
+  //position: relative;
+  font-size: rem(16);
+  color: var(--white);
+
+  &__list {
+    display: flex;
+    column-gap: rem(25);
+
+//    @include mobile {
+//      position: absolute;
+//      top: rem(75);
+//      left: rem(20);
+//    }
+
+//    @include mobile {
+//      left: -156px;
+//      overflow: auto;
+//    }
+  }
+
+  &__link {
+    white-space: nowrap;
+    &:hover {
+      color: var(--green-hover);
+    }
+
+    &.is-active {
+      color: var(--primary-green);
+    }
+  }
+}

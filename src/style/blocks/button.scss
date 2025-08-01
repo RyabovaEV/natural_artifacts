@@ -1,0 +1,56 @@
+@use '../helpers' as *;
+
+.button {
+  background: none;
+  border: none;
+
+  &--icon {
+    color: var(--primary-green);
+    padding: rem(5);
+    svg {
+      fill: none;
+    }
+
+    &:hover {
+      color: var(--green-hover);
+    }
+
+    &:active {
+      color: var(--green-activeclick);
+    }
+  }
+
+  &--name-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: rem(8);
+    color: var(--primary-green);
+    font-weight: bold;
+
+    &:hover {
+      color: var(--green-hover);
+    }
+
+    &:active {
+      color: var(--green-activeclick);
+    }
+  }
+
+  &--card {
+    padding: rem(10) rem(30);
+    border: 1px solid var(--primary-green);
+    color: var(--primary-green);
+
+    @include hover {
+      color: var(--background-shade);
+      border-color: var(--primary-green);
+      background-color: var(--primary-green);
+    }
+
+    &:active {
+      border-color: var(--green-activeclick);
+      background-color: var(--green-activeclick);
+    };
+  }
+}

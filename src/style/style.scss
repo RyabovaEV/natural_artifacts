@@ -1,0 +1,21 @@
+//@import '@a1rth/css-normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+@use '@a1rth/css-normalize';
+
+@use "blocks/header";
+@use "blocks/menu";
+@use "blocks/button";
+@use "blocks/hero";
+@use "blocks/collection";
+@use "blocks/swiper";
+@use "blocks/swiper-card";
+
+// .header,
+// main > *:not(:last-child),
+// .footer {
+//     display: none !important;
+// }
+

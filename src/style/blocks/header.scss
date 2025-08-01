@@ -1,0 +1,59 @@
+@use '../helpers' as *;
+
+.header {
+  position: relative;
+  width: 100vw;
+  height: rem(60);
+
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    margin-right: rem(125);
+    color: var(--white);
+
+    @include tablet {
+      margin-right: rem(70);
+    }
+
+    @include mobile {
+      margin-right: auto;
+    }
+
+    &:hover {
+      color: var(--green-hover);
+    }
+    &:active {
+      color: var(--green-activeclick);
+    }
+  }
+
+  &__menu {
+    margin-right: auto;
+
+    @include mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      bottom: -40px;
+      margin-right: 0;
+      width: 100%;
+    }
+
+    @include mobile-s {
+      justify-content: start;
+      overflow: auto;
+      padding-left: var(--container-padding-x);
+      padding-right: var(--container-padding-x);
+      scrollbar-width: none;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: fluid(64, 32);
+  }
+
+}

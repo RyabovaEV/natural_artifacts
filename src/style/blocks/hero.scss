@@ -1,0 +1,38 @@
+@use '../helpers' as *;
+
+.hero {
+  width: 100%;
+  height: fluid(550, 404);
+
+  background-image: url("./../images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+
+  @include tablet {
+    background-position: 20% center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(25);
+
+    &-top {
+      max-width: rem(700);
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      row-gap: rem(15);
+    }
+  }
+
+  &__description {
+    @include mobile {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>F & B</title>
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./favicon/apple-touch-icon.png"
+  >
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./favicon//favicon-32x32.png"
+  >
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./favicon//favicon-16x16.png"
+  >
+</head>
+<body>
+<!--    <div id="app">-->
+<!--      <div class="test"></div>-->
+<!--    </div>-->
+<header class="header container">
+  <a
+    class="header__logo"
+    href="/"
+  >
+    <svg
+      width="65"
+      height="20"
+    >
+      <use href="#icon-logo" />
+    </svg>
+  </a>
+  <nav class="header__menu menu">
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a
+          class="menu__link is-active"
+          href="/"
+        >
+          Каталог
+        </a>
+      </li>
+      <li class="menu__item">
+        <a
+          class="menu__link"
+          href="/"
+        >
+          Галерея
+        </a>
+      </li>
+      <li class="menu__item">
+        <a
+          class="menu__link"
+          href="/"
+        >
+          О лаборатории
+        </a>
+      </li>
+      <li class="menu__item">
+        <a
+          class="menu__link"
+          href="/"
+        >
+          Контакты
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="header__actions">
+    <form action="#">
+      <button
+        class="header__button button button--icon"
+        type="submit"
+      >
+        <svg
+          width="24"
+          height="24"
+        >
+          <use href="#icon-search" />
+        </svg>
+      </button>
+    </form>
+    <button
+      class="header__button button button--icon"
+      type="button"
+    >
+      <svg
+        width="24"
+        height="24"
+      >
+        <use href="#icon-log-in" />
+      </svg>
+    </button>
+  </div>
+</header>
+<main class="main">
+  <section
+    class="hero"
+    aria-labelledby="hero-title"
+  >
+    <div class="container container--flex">
+      <div class="hero__content">
+        <div class="hero__content-top">
+          <h1
+            class="hero__title"
+            id="hero-title"
+          >Крупнейшая коллекция природных артефактов
+          </h1>
+          <p class="hero__description">
+            Являясь всего лишь частью общей картины, интерактивные прототипы, которые представляют собой яркий пример европейского типа политической и социальной культуры.
+          </p>
+        </div>
+        <div class="hero__content-link">
+          <a
+            class=" button button--name-icon"
+            href="/"
+          >
+            <span>Исследовать</span>
+            <svg
+              width="44"
+              height="15"
+            >
+              <use href="#icon-arrow" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="collection container"
+    aria-labelledby="collection-title"
+  >
+    <h2
+      class="collection__title"
+      id="collection-title"
+    >Коллекция артефактов
+    </h2>
+    <div class="collection__swiper">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <article class="swiper__card swiper-card">
+              <img
+                class="swiper-card__image"
+                src="./images/collection1.jpg"
+                alt="Fig. 1 (plant)"
+                width="255"
+                height="180"
+                loading="lazy"
+              />
+              <div class="swiper-card__description">
+                <h3 class="swiper-card__description-title">Fig. 1 (plant)</h3>
+                <p class="swiper-card__description-text">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
+              </div>
+              <div class="swiper-card__link">
+                <a
+                  href="/"
+                  class="button button--card"
+                >
+                  Подробнее
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="swiper__card swiper-card">
+              <img
+                class="swiper-card__image"
+                src="./images/collection2.jpg"
+                alt="Fig. 2 (flower)"
+                width="255"
+                height="180"
+                loading="lazy"
+              />
+              <div class="swiper-card__description">
+                <h3 class="swiper-card__description-title">Fig. 2 (flower)</h3>
+                <p class="swiper-card__description-text">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
+              </div>
+              <div class="swiper-card__link">
+                <a
+                  href="/"
+                  class="button button--card"
+                >
+                  Подробнее
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="swiper__card swiper-card">
+              <img
+                class="swiper-card__image"
+                src="./images/collection3.jpg"
+                alt="Fig. 3 (leaf)"
+                width="255"
+                height="180"
+                loading="lazy"
+              />
+              <div class="swiper-card__description">
+                <h3 class="swiper-card__description-title">Fig. 3 (leaf)</h3>
+                <p class="swiper-card__description-text">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
+              </div>
+              <div class="swiper-card__link">
+                <a
+                  href="/"
+                  class="button button--card"
+                >
+                  Подробнее
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="swiper__card swiper-card">
+              <img
+                class="swiper-card__image"
+                src="./images/collection4.jpg"
+                alt="Fig. 1 (plant)"
+                width="255"
+                height="180"
+                loading="lazy"
+              />
+              <div class="swiper-card__description">
+                <h3 class="swiper-card__description-title">Fig. 4 (wood)</h3>
+                <p class="swiper-card__description-text">Базовый вектор развития не даёт нам иного выбора, кроме определения новых предложений.</p>
+              </div>
+              <div class="swiper-card__link">
+                <a
+                  href="/"
+                  class="button button--card"
+                >
+                  Подробнее
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="swiper__card swiper-card">
+              <img
+                class="swiper-card__image"
+                src="./images/collection1.jpg"
+                alt="Fig. 1 (plant)"
+                width="255"
+                height="180"
+                loading="lazy"
+              />
+              <div class="swiper-card__description">
+                <h3 class="swiper-card__description-title">Fig. 1 (plant)</h3>
+                <p class="swiper-card__description-text">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
+              </div>
+              <div class="swiper-card__link">
+                <a
+                  href="/"
+                  class="button button--card"
+                >
+                  Подробнее
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="collection__controls">
+        <button
+          class="swiper-button-prev  button button--control"
+          aria-label="Назад"
+        >
+          <svg
+            width="26"
+            height="16"
+            class="icon"
+          >
+            <use xlink:href="#icon-arrow-left"></use>
+          </svg>
+        </button>
+
+        <div class="swiper-pagination h3"></div>
+
+        <button
+          class="swiper-button-next  button button--control"
+          aria-label="Вперед"
+        >
+          <svg
+            width="26"
+            height="16"
+            class="icon"
+          >
+            <use xlink:href="#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>footer</footer>
+<script
+  type="module"
+  src="/src/scripts/main.js"
+></script>
+</body>
+</html>
