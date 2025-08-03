@@ -1,0 +1,38 @@
+@use '../helpers' as *;
+
+.contact {
+  width: 100%;
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+
+  background-image: url("./../images/contacts.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+
+  @include tablet {
+    background-position: 20% center;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(24);
+  }
+
+  .contact__header {
+    max-width: rem(825);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(16);
+  }
+
+  &__form {
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: rem(24);
+    align-items: start;
+  }
+}

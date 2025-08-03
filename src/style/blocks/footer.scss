@@ -1,0 +1,23 @@
+@use '../helpers' as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__social {
+    width: 100%;
+    padding-block: rem(18);
+    display: flex;
+    justify-content: center;
+    column-gap: rem(30);
+    background-color: var(--background-shade);
+  }
+
+  &__copyright {
+    padding-block: rem(3);
+    color: var(--grey);
+    font-size: rem(12);
+  }
+}

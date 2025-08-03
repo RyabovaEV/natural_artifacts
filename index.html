@@ -26,13 +26,11 @@
   >
 </head>
 <body>
-<!--    <div id="app">-->
-<!--      <div class="test"></div>-->
-<!--    </div>-->
 <header class="header container">
   <a
     class="header__logo"
     href="/"
+    aria-label="Главная страница"
   >
     <svg
       width="65"
@@ -41,7 +39,7 @@
       <use href="#icon-logo" />
     </svg>
   </a>
-  <nav class="header__menu menu">
+  <nav class="header__menu menu" role="navigation" aria-label="Основное меню">
     <ul class="menu__list">
       <li class="menu__item">
         <a
@@ -80,24 +78,28 @@
   <div class="header__actions">
     <form action="#">
       <button
-        class="header__button button button--icon"
+        class="header__button button button__icon"
         type="submit"
+        aria-label="Поиск"
       >
         <svg
           width="24"
           height="24"
+          aria-hidden="true"
         >
           <use href="#icon-search" />
         </svg>
       </button>
     </form>
     <button
-      class="header__button button button--icon"
+      class="header__button button button__icon"
       type="button"
+      aria-label="Войти в систему"
     >
       <svg
         width="24"
         height="24"
+        aria-hidden="true"
       >
         <use href="#icon-log-in" />
       </svg>
@@ -123,7 +125,7 @@
         </div>
         <div class="hero__content-link">
           <a
-            class=" button button--name-icon"
+            class=" button button__name-icon"
             href="/"
           >
             <span>Исследовать</span>
@@ -167,7 +169,8 @@
               <div class="swiper-card__link">
                 <a
                   href="/"
-                  class="button button--card"
+                  class="button button__card"
+                  aria-label="Подробнее о Fig. 1 (plant)"
                 >
                   Подробнее
                 </a>
@@ -191,7 +194,8 @@
               <div class="swiper-card__link">
                 <a
                   href="/"
-                  class="button button--card"
+                  class="button button__card"
+                  aria-label="Подробнее о Fig. 2 (flower)"
                 >
                   Подробнее
                 </a>
@@ -215,7 +219,8 @@
               <div class="swiper-card__link">
                 <a
                   href="/"
-                  class="button button--card"
+                  class="button button__card"
+                  aria-label="Подробнее о Fig. 3 (leaf)"
                 >
                   Подробнее
                 </a>
@@ -239,7 +244,8 @@
               <div class="swiper-card__link">
                 <a
                   href="/"
-                  class="button button--card"
+                  class="button button__card"
+                  aria-label="Подробнее о Fig. 4 (wood)"
                 >
                   Подробнее
                 </a>
@@ -263,7 +269,8 @@
               <div class="swiper-card__link">
                 <a
                   href="/"
-                  class="button button--card"
+                  class="button button__card"
+                  aria-label="Подробнее о Fig. 1 (plant)"
                 >
                   Подробнее
                 </a>
@@ -303,8 +310,180 @@
       </div>
     </div>
   </section>
+  <section class="new-artefacts container" aria-labelledby="new-artefacts">
+    <h2 class="new-artefacts__title" id="new-artefacts">Новые артефакты</h2>
+    <div class="new-artefacts__content new-artefacts-content">
+      <div class="new-artefacts-content__background">
+        <img
+          class="new-artefacts-content__image"
+          src="./images/new-artefacts.jpg"
+          alt="Новые артефакты"
+          width="825"
+          height="493"
+          loading="lazy"
+        />
+        <div class="new-artefacts-content__image-swipe">
+          <span>Swipe to see more</span>
+          <svg
+            width="44"
+            height="15"
+            class="icon"
+          >
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+        </div>
+      </div>
+      <article class="new-artefacts-content__card description-card">
+        <h3 class="description-card__title">Kurische Nehrung 24</h3>
+        <div class="description-card__description">
+          <p>Вот вам яркий пример современных тенденций - начало повседневной работы по формированию позиции выявляет срочную потребность методов управления процессами.</p>
+          <p>Есть над чем задуматься: представители современных социальных резервов своевременно верифицированы.</p>
+        </div>
+        <div class="description-card__link">
+          <a
+            class=" button button__name-icon button__name-icon--black"
+            href="/"
+          >
+            <span>Исследовать</span>
+            <svg
+              width="44"
+              height="15"
+            >
+              <use href="#icon-arrow" />
+            </svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="contact" aria-labelledby="contact-title">
+    <div class="container contact__container">
+      <div class="contact__header">
+        <h2 class="contact__title" id="contact-title">
+          Помочь проекту
+        </h2>
+        <div class="contact__description">
+          <p>Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.</p>
+        </div>
+      </div>
+      <form
+        action="#"
+        method="post"
+        class="contact__form form"
+        data-js-contact-form
+        novalidate
+      >
+        <div class="form__block">
+          <span
+            class="form__block-error"
+            id="input-name-errors"
+            data-js-from-block-errors
+          ></span>
+          <input
+            class="form__input"
+            id="name"
+            name="name"
+            placeholder="Имя"
+            type="text"
+            minlength="2"
+            maxlength="20"
+            data-js-contact-form-input-name
+            aria-errormessage="input-name-errors"
+            aria-describedby="input-name-errors"
+            required
+          />
+        </div>
+        <div class="form__block">
+          <span
+            class="form__block-error"
+            id="email-errors"
+            data-js-from-block-errors
+          ></span>
+          <input
+            class="form__input"
+            id="email"
+            name="email"
+            placeholder="email"
+            type="email"
+            data-js-contact-form-email
+            aria-describedby="email-errors"
+            aria-errormessage="email-errors"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="form__button button button__card button__card--green"
+          data-js-contact-form-btn
+        >
+          Отправить
+        </button>
+      </form>
+    </div>
+  </section>
 </main>
-<footer>footer</footer>
+<footer class="footer">
+  <div class="footer__social">
+    <a
+      href="#"
+      class="header__button button button__icon button__icon--grey"
+      aria-label="Мы на Youtube"
+    >
+      <svg
+        width="24"
+        height="24"
+        aria-hidden="true"
+      >
+        <use href="#icon-youtube" />
+      </svg>
+    </a>
+    <a
+      href="#"
+      class="header__button button button__icon button__icon--grey"
+      aria-label="Мы в instagram"
+    >
+      <svg
+        width="24"
+        height="24"
+        aria-hidden="true"
+      >
+        <use href="#icon-instagram" />
+      </svg>
+    </a>
+    <a
+      href="#"
+      class="header__button button button__icon button__icon--grey"
+      aria-label="Мы в facebook"
+    >
+      <svg
+        width="24"
+        height="24"
+        aria-hidden="true"
+      >
+        <use href="#icon-facebook" />
+      </svg>
+    </a>
+    <a
+      href="#"
+      class="header__button button button__icon button__icon--grey"
+      aria-label="Мы в twitter"
+    >
+      <svg
+        width="24"
+        height="24"
+        aria-hidden="true"
+      >
+        <use href="#icon-twitter" />
+      </svg>
+    </a>
+  </div>
+  <div
+    class="footer__copyright"
+    data-js-date-block
+  >
+    f&b &copy; <span data-js-date></span>
+  </div>
+</footer>
 <script
   type="module"
   src="/src/scripts/main.js"

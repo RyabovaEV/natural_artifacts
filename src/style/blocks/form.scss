@@ -1,0 +1,48 @@
+@use '../helpers' as *;
+
+.form {
+  &__input {
+    border: 1px solid var(--white);
+    min-width: rem(350);
+    height: rem(45);
+    padding: rem(10) rem(16);
+
+    background-color: var(--white);
+    color: var(--background-shade);
+    font-weight: 600;
+    transition: all .3s;
+
+    @include mobile-s {
+      min-width: 100%;
+    }
+
+    &::placeholder {
+      color: var(--grey);
+      font-weight: 400;
+    }
+
+    &:hover {
+      background-color: var(--grey);
+      border: 1px solid var(--grey);
+      &::placeholder {
+        color: var(--white);
+      }
+    }
+
+    &--error {
+      border: 1px solid var(--red);
+      outline: none;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: rem(5);
+    &-error {
+      //display: none;
+      margin-left: rem(16);
+      color: var(--red);
+    }
+  }
+}

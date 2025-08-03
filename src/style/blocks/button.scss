@@ -4,7 +4,7 @@
   background: none;
   border: none;
 
-  &--icon {
+  &__icon {
     color: var(--primary-green);
     padding: rem(5);
     svg {
@@ -18,15 +18,27 @@
     &:active {
       color: var(--green-activeclick);
     }
+
+    &--grey {
+      color: var(--grey);
+      svg {
+        fill: currentColor;
+        stroke: none;
+      }
+    }
   }
 
-  &--name-icon {
+  &__name-icon {
     display: inline-flex;
     align-items: center;
     justify-content: start;
     column-gap: rem(8);
     color: var(--primary-green);
     font-weight: bold;
+
+    & svg {
+      stroke: none;
+    }
 
     &:hover {
       color: var(--green-hover);
@@ -35,9 +47,21 @@
     &:active {
       color: var(--green-activeclick);
     }
+
+    &--black {
+      color: var(--background-shade);
+
+      &:hover {
+        color: var(--green-activeclick);
+      }
+
+      &:active {
+        color: var(--grey);
+      }
+    }
   }
 
-  &--card {
+  &__card {
     padding: rem(10) rem(30);
     border: 1px solid var(--primary-green);
     color: var(--primary-green);
@@ -52,5 +76,22 @@
       border-color: var(--green-activeclick);
       background-color: var(--green-activeclick);
     };
+
+    &--green {
+      background-color: var(--primary-green);
+      color: var(--background-shade);
+      font-weight: 700;
+
+      @include hover {
+        border-color: var(--green-hover);
+        background-color: var(--green-hover);
+      }
+
+      &:disabled {
+        background-color: var(--grey);
+      }
+    }
+
+
   }
 }
