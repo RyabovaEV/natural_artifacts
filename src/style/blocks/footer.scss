@@ -1,6 +1,7 @@
 @use '../helpers' as *;
 
 .footer {
+  min-height: rem(93);
   display: flex;
   flex-direction: column;
   align-items: center;

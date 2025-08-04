@@ -10,6 +10,14 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
 
+  @supports (background-image: url("./../images/hero.webp")) {
+    background-image: url("./../images/hero.webp");
+  }
+
+  @supports (background-image: url("./../images/hero.avif")) {
+    background-image: url("./../images/hero.avif");
+  }
+
 
   @include tablet {
     background-position: 20% center;

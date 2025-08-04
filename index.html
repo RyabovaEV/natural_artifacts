@@ -314,14 +314,24 @@
     <h2 class="new-artefacts__title" id="new-artefacts">Новые артефакты</h2>
     <div class="new-artefacts__content new-artefacts-content">
       <div class="new-artefacts-content__background">
-        <img
-          class="new-artefacts-content__image"
-          src="./images/new-artefacts.jpg"
-          alt="Новые артефакты"
-          width="825"
-          height="493"
-          loading="lazy"
-        />
+        <picture>
+          <source
+            srcset="./images/new-artefacts.avif"
+            type="image/avif"
+          />
+          <source
+            srcset="./images/new-artefacts.webp"
+            type="image/webp"
+          />
+          <img
+            class="new-artefacts-content__image"
+            src="./images/new-artefacts.jpg"
+            alt="Новые артефакты"
+            width="825"
+            height="493"
+            loading="lazy"
+          />
+        </picture>
         <div class="new-artefacts-content__image-swipe">
           <span>Swipe to see more</span>
           <svg

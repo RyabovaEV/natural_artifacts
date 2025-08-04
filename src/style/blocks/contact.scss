@@ -11,6 +11,13 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
 
+  @supports (background-image: url("./../images/contacts.webp")) {
+    background-image: url("./../images/contacts.webp");
+  }
+
+  @supports (background-image: url("./../images/contacts.avif")) {
+    background-image: url("./../images/contacts.avif");
+  }
 
   @include tablet {
     background-position: 20% center;
@@ -30,6 +37,7 @@
   }
 
   &__form {
+    min-height: 300px;
     display: inline-flex;
     flex-direction: column;
     row-gap: rem(24);

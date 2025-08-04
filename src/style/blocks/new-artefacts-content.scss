@@ -4,6 +4,7 @@
   &__background {
     position: relative;
     //flex: 0 0 75%;
+    aspect-ratio: 825 / 493;
     width: 100%;
     align-self: stretch;
     display: flex;
@@ -17,6 +18,13 @@
       max-width: 100%;
       height: auto;
       object-fit: cover;
+    }
+
+    &__image {
+      display: block;
+      aspect-ratio: 825 / 493;
+      width: 100%;
+      height: auto;
     }
 
     @include mobile {

@@ -1,6 +1,7 @@
 @use '../helpers' as *;
 
 .description-card {
+  flex-basis: rem(392);
   padding: rem(16) rem(16) rem(24);
   display: flex;
   flex-direction: column;
