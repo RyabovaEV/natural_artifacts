@@ -2,21 +2,22 @@
 
 .contact {
   width: 100%;
+  height: auto;
   padding-top: rem(60);
   padding-bottom: rem(60);
 
-  background-image: url("./../images/contacts.jpg");
+  background-image: url("/images/contacts.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
 
-  @supports (background-image: url("./../images/contacts.webp")) {
-    background-image: url("./../images/contacts.webp");
+  @supports (background-image: url("/images/contacts.webp")) {
+    background-image: url("/images/contacts.webp");
   }
 
-  @supports (background-image: url("./../images/contacts.avif")) {
-    background-image: url("./../images/contacts.avif");
+  @supports (background-image: url("/images/contacts.avif")) {
+    background-image: url("/images/contacts.avif");
   }
 
   @include tablet {
@@ -37,7 +38,7 @@
   }
 
   &__form {
-    min-height: 300px;
+    //min-height: 300px;
     display: inline-flex;
     flex-direction: column;
     row-gap: rem(24);

@@ -4,18 +4,18 @@
   width: 100%;
   height: fluid(550, 404);
 
-  background-image: url("./../images/hero.jpg");
+  background-image: url("/images/hero.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
 
-  @supports (background-image: url("./../images/hero.webp")) {
-    background-image: url("./../images/hero.webp");
+  @supports (background-image: url("/images/hero.webp")) {
+    background-image: url("/images/hero.webp");
   }
 
-  @supports (background-image: url("./../images/hero.avif")) {
-    background-image: url("./../images/hero.avif");
+  @supports (background-image: url("/images/hero.avif")) {
+    background-image: url("/images/hero.avif");
   }
 
 
